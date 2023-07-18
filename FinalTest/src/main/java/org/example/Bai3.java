@@ -51,16 +51,12 @@ public class Bai3 {
             arr[i] = arr[arr.length - 1 - i];
             arr[arr.length - 1 - i] = temp;
         }
-        // Trả về mảng đã đảo ngược
         return arr;
     }
 
     static boolean checkSNT(int a){
-        /// a la SNT thi return true
-        // a khong la SNT return false
         if(a<2){
-            return false; // nho hon 2 chac chan khong phai la so nguyen to
-        }
+            return false;
         int count = 0;
         for(int i = 1;i<=a;i ++){
             if(a%i ==0){
